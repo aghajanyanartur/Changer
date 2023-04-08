@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <title>Best Changer</title>
+</head>
+<body>
+<div id="about-link">
+	<a href="/about">About</a>
+</div>
+
+<div id="greeting-text" align="center">
+    <h2>Best Change Offer</h2><br>
+    <p>BestChanger is your guide to find the best currency change offers<br>
+        in nearest branches of banks in Armenia.</p>
+</div>
+
+<form action="analyze", method="post">
+	  <span><select name="currency-from">
+	    <option>AMD</option>
+	    <option>USD</option>
+	    <option>RUR</option>
+	    <option>EUR</option>
+	    <option>GBP</option>
+	  </select>
+	  <input type="text" name="inputted-amount" required></span>
+    <span><select name="currency-to">
+	    <option>AMD</option>
+	    <option>USD</option>
+	    <option>RUR</option>
+	    <option>EUR</option>
+	    <option>GBP</option>
+	  </select>
+	  <input type="text" placeholder="calculation result" disabled></span>
+    <input id="button" type="submit" name="submit" value="Find Best Offer">
+</form>
+</body>
+</html>

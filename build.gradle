@@ -1,0 +1,40 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.0.5'
+	id 'io.spring.dependency-management' version '1.1.0'
+	id 'com.google.cloud.tools.jib' version '3.1.4'
+}
+
+group = 'art.pro'
+version = '1.0'
+
+jar {
+	manifest {
+		attributes 'Main-Class': 'art.pro.changer.ChangerApplication'
+	}
+}
+
+jib {
+	to {
+		image = 'gcr.io/changer/changer-image'
+		tags = ['latest']
+	}
+	container {
+		mainClass = 'art.pro.changer.ChangerApplication'
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.jsoup:jsoup:1.15.4'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="art.pro.changer.controller.MainControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-08T03:34:47" hostname="DESKTOP-A65BT7R" time="0.606">
+  <properties/>
+  <testcase name="resultPageTest()" classname="art.pro.changer.controller.MainControllerTest" time="0.169"/>
+  <testcase name="resultPageInvalidAmountTest()" classname="art.pro.changer.controller.MainControllerTest" time="0.302"/>
+  <testcase name="homePageTest()" classname="art.pro.changer.controller.MainControllerTest" time="0.133"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

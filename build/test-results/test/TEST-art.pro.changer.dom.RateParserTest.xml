@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="art.pro.changer.dom.RateParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-08T03:34:48" hostname="DESKTOP-A65BT7R" time="0.128">
+  <properties/>
+  <testcase name="testChangeMoney()" classname="art.pro.changer.dom.RateParserTest" time="0.128"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

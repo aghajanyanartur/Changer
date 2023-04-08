@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <title>Best Changer</title>
+</head>
+<body>
+
+<div id="greeting-text" align="center">
+  <h2>Best Change Offer</h2><br>
+  <p>Our system found the best offer from all banks in Armenia</p>
+  <br><br><br>
+</div>
+
+<form action="/">
+	  <span><select name="currency-from" disabled>
+	    <option th:text="${from}"/>
+	  </select>
+	  <input type="text" th:value="${inputtedamount}" disabled></span>
+  <span><select name="currency-to" disabled>
+	    <option th:text="${to}"/>
+	  </select>
+	  <input type="text" th:value="${changeresult}" disabled></span>
+  <br><p>The best offer is made by <span th:text="${bestbank}"></span></p>
+  <p><a th:href="${mapurl}">See branches and ATM's on map</a></p><br>
+  <input id="button" type="submit" name="submit" value="Return Home">
+</form>
+</body>
+</html>
